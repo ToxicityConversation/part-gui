@@ -1,0 +1,593 @@
+game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "Tips";
+                Text = "Use Infinite Yield to check part name by use this commad : Partname";
+                Duration = 5;
+})
+game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "Tips";
+                Text = "Use Infinite Yield to check part name by use this commad : Partname";
+                Duration = 5;
+})
+game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "Tips";
+                Text = "Use Infinite Yield to check part name by use this commad : Partname";
+                Duration = 5;
+})
+--- work in some game ---
+--- only you can see cuz this script is for farm on any game that working ---
+--- it an loop bring cuz it good at farm in some game ---
+--- Warning This script really lag i try it ---
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local main2 = Instance.new("Frame")
+local PartEspOn = Instance.new("TextButton")
+local PartEspOff = Instance.new("TextButton")
+local BringPartOff = Instance.new("TextButton")
+local BringPartOn = Instance.new("TextButton")
+local GotoPartOn = Instance.new("TextButton")
+local GotoPartOff = Instance.new("TextButton")
+local ViewPartOn = Instance.new("TextButton")
+local ViewPartOff = Instance.new("TextButton")
+local AutoClickOn = Instance.new("TextButton")
+local AutoClickOff = Instance.new("TextButton")
+local Version = Instance.new("TextButton")
+local Cred = Instance.new("TextButton")
+local PartName = Instance.new("TextBox")
+local PartName2 = Instance.new("TextBox")
+local PartName3 = Instance.new("TextBox")
+local PartName4 = Instance.new("TextBox")
+local PartName5 = Instance.new("TextBox")
+local X = Instance.new("TextBox")
+local Y = Instance.new("TextBox")
+local Z = Instance.new("TextBox")
+local Close = Instance.new("TextButton")
+local Open = Instance.new("TextButton")
+local ViewPartDelay = Instance.new("TextBox")
+local BringDelay = Instance.new("TextBox")
+local GotoPartDelay = Instance.new("TextBox")
+local delete = Instance.new("TextButton")
+local A = Instance.new("TextButton")
+local B = Instance.new("TextButton")
+
+ScreenGui.Name = "PartGui"
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main2.Name = "main2"
+main2.Parent = main
+main2.BackgroundColor3 = Color3.fromRGB(255, 5, 17)
+main2.Position = UDim2.new(0, 0, 0, 151)
+main2.Size = UDim2.new(0, 150, 0, 200)
+main2.Active = true
+main2.Visible = false
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(255, 5, 17)
+main.Position = UDim2.new(0.0809101239, 0, 0.203790441, 0)
+main.Size = UDim2.new(0, 300, 0, 150)
+main.Active = true
+main.Draggable = true
+
+PartName5.Name = "PartName5"
+PartName5.Parent = main2
+PartName5.BackgroundColor3 = Color3.fromRGB(100, 50, 200)
+PartName5.Position = UDim2.new(0, 25, 0, 130)
+PartName5.Size = UDim2.new(0, 100, 0, 35)
+PartName5.Font = Enum.Font.SourceSans
+PartName5.Text = "Part Nme Here 5"
+PartName5.TextColor3 = Color3.fromRGB(0, 0, 0)
+PartName5.TextScaled = true
+PartName5.TextSize = 14.000
+PartName5.TextWrapped = true
+PartName5.PlaceholderText = "Part Name Here 5"
+
+PartName4.Name = "PartName4"
+PartName4.Parent = main2
+PartName4.BackgroundColor3 = Color3.fromRGB(100, 50, 200)
+PartName4.Position = UDim2.new(0, 25, 0, 90)
+PartName4.Size = UDim2.new(0, 100, 0, 35)
+PartName4.Font = Enum.Font.SourceSans
+PartName4.Text = "Part Nme Here 4"
+PartName4.TextColor3 = Color3.fromRGB(0, 0, 0)
+PartName4.TextScaled = true
+PartName4.TextSize = 14.000
+PartName4.TextWrapped = true
+PartName4.PlaceholderText = "Part Name Here 4"
+
+PartName3.Name = "PartName3"
+PartName3.Parent = main2
+PartName3.BackgroundColor3 = Color3.fromRGB(100, 50, 200)
+PartName3.Position = UDim2.new(0, 25, 0, 50)
+PartName3.Size = UDim2.new(0, 100, 0, 35)
+PartName3.Font = Enum.Font.SourceSans
+PartName3.Text = "Part Nme Here 3"
+PartName3.TextColor3 = Color3.fromRGB(0, 0, 0)
+PartName3.TextScaled = true
+PartName3.TextSize = 14.000
+PartName3.TextWrapped = true
+PartName3.PlaceholderText = "Part Name Here 3"
+
+PartName2.Name = "PartName2"
+PartName2.Parent = main2
+PartName2.BackgroundColor3 = Color3.fromRGB(100, 50, 200)
+PartName2.Position = UDim2.new(0, 25, 0, 10)
+PartName2.Size = UDim2.new(0, 100, 0, 35)
+PartName2.Font = Enum.Font.SourceSans
+PartName2.Text = "Part Nme Here 2"
+PartName2.TextColor3 = Color3.fromRGB(0, 0, 0)
+PartName2.TextScaled = true
+PartName2.TextSize = 14.000
+PartName2.TextWrapped = true
+PartName2.PlaceholderText = "Part Name Here 2"
+
+PartName.Name = "PartName"
+PartName.Parent = main
+PartName.BackgroundColor3 = Color3.fromRGB(100, 50, 200)
+PartName.Position = UDim2.new(0, 25, 0, 80)
+PartName.Size = UDim2.new(0, 100, 0, 35)
+PartName.Font = Enum.Font.SourceSans
+PartName.Text = "Part Nme Here"
+PartName.TextColor3 = Color3.fromRGB(0, 0, 0)
+PartName.TextScaled = true
+PartName.TextSize = 14.000
+PartName.TextWrapped = true
+PartName.PlaceholderText = "Part Name Here"
+
+B.Name = "B"
+B.Parent = main
+B.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+B.Position = UDim2.new(0, 0, 0, 322)
+B.Size = UDim2.new(0, 30, 0, 30)
+B.Font = Enum.Font.SourceSans
+B.Text = "-"
+B.TextColor3 = Color3.fromRGB(255, 255, 255)
+B.TextSize = 30
+B.TextWrapped = true
+B.Visible = false
+B.BackgroundTransparency = 0.7
+B.MouseButton1Down:Connect(function()
+main2.Visible = false
+A.Visible = true
+B.Visible = false
+end)
+
+A.Name = "A"
+A.Parent = main
+A.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+A.Position = UDim2.new(0, -0, 0, 120)
+A.Size = UDim2.new(0, 30, 0, 30)
+A.Font = Enum.Font.SourceSans
+A.Text = "+"
+A.TextColor3 = Color3.fromRGB(255, 255, 255)
+A.TextScaled = true
+A.TextSize = 14.000
+A.TextWrapped = true
+A.BackgroundTransparency=0.7
+A.MouseButton1Down:Connect(function()
+main2.Visible = true
+A.Visible = false
+B.Visible = true
+end)
+
+delete.Name = "delete"
+delete.Parent = main
+delete.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+delete.Position = UDim2.new(0, 335, -0.266169071, 10)
+delete.Size = UDim2.new(0, -34, 0, 34)
+delete.Font = Enum.Font.SourceSans
+delete.Text = "Remove Gui"
+delete.TextColor3 = Color3.fromRGB(255, 0, 0)
+delete.TextScaled = true
+delete.TextSize = 14.000
+delete.TextWrapped = true
+delete.MouseButton1Down:Connect(function()
+game.CoreGui.PartGui:destroy()
+wait(1)
+
+_G.View = false
+while _G.View == true do wait(ViewPartDelay.Text)
+for i,v in pairs(workspace:GetDescendants()) do
+		if v.Name == PartName.Text or v.Name == PartName2.Text or v.Name == PartName3.Text or v.Name == PartName4.Text or v.Name == PartName5.Text then
+				wait(ViewPartDelay.Text)
+				workspace.CurrentCamera.CameraSubject = v
+			end
+		end
+	end
+
+_G.Goto = false
+while _G.Goto == true do wait(GotoPartDelay.Text)
+for i,v in pairs(workspace:GetDescendants()) do
+		if v.Name == PartName.Text then
+			if game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid') and game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid').SeatPart then
+				game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid').Sit = false
+				wait(.1)
+				end
+			wait(GotoPartDelay.Text)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+end
+end
+end
+
+for i,v in pairs(workspace:GetDescendants()) do
+			if v:IsA("BoxHandleAdornment") then
+				v:Destroy()
+end
+end
+
+_G.BringPart = false
+while _G.BringPart == true do wait(BringDelay.Text)
+for i,v in pairs(workspace:GetDescendants()) do
+		if v.Name == PartName.Text or v.Name == PartName2.Text or v.Name == PartName3.Text or v.Name == PartName4.Text or v.Name == PartName5.Text then
+			v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		end
+end
+end
+wait(0.5)
+workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+wait(1)
+workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+wait(3)
+workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+end)
+
+Close.Name = "Close"
+Close.Parent = main
+Close.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Close.Position = UDim2.new(0, -34, -0.266169071, 10)
+Close.Size = UDim2.new(0, 34, 0, 34)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+Close.MouseButton1Down:Connect(function()
+main.Visible = false
+Open.Visible = true
+Close.Visible = false
+end)
+
+BringDelay.Name = "BringDelay"
+BringDelay.Parent = main
+BringDelay.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+BringDelay.Position = UDim2.new(0, -71, 0, 0)
+BringDelay.Size = UDim2.new(0, 70, 0, 34)
+BringDelay.Font = Enum.Font.SourceSans
+BringDelay.Text = "Set bring delay here"
+BringDelay.TextColor3 = Color3.fromRGB(255, 0, 0)
+BringDelay.TextSize = 14.000
+BringDelay.TextWrapped = true
+BringDelay.PlaceholderText = "Set bring delay here"
+
+ViewPartDelay.Name = "ViewDelay"
+ViewPartDelay.Parent = main
+ViewPartDelay.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+ViewPartDelay.Position = UDim2.new(0, -71, 0.25, 31)
+ViewPartDelay.Size = UDim2.new(0, 70, 0, 34)
+ViewPartDelay.Font = Enum.Font.SourceSans
+ViewPartDelay.Text = "Set View delay here"
+ViewPartDelay.TextColor3 = Color3.fromRGB(255, 0, 0)
+ViewPartDelay.TextSize = 14.000
+ViewPartDelay.TextWrapped = true
+ViewPartDelay.PlaceholderText = "Set View delay here"
+
+GotoPartDelay.Name = "GotoDelay"
+GotoPartDelay.Parent = main
+GotoPartDelay.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+GotoPartDelay.Position = UDim2.new(0, -71, 0.25, -4)
+GotoPartDelay.Size = UDim2.new(0, 70, 0, 34)
+GotoPartDelay.Font = Enum.Font.SourceSans
+GotoPartDelay.Text = "Set go to delay here"
+GotoPartDelay.TextColor3 = Color3.fromRGB(255, 0, 0)
+GotoPartDelay.TextSize = 14.000
+GotoPartDelay.TextWrapped = true
+GotoPartDelay.PlaceholderText = "Set go to delay here"
+
+Z.Name = "CFrameZ"
+Z.Parent = main
+Z.Size = UDim2.new(0, 34, 0, 32)
+Z.Position = UDim2.new(0, -105, 0, 0)
+Z.Text = "Z"
+Z.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+Z.TextColor3 = Color3.fromRGB(255, 0, 0)
+Z.TextSize = 15
+Z.PlaceholderText = "Z"
+
+Y.Name = "CFramey"
+Y.Parent = main
+Y.Size = UDim2.new(0, 34, 0, 32)
+Y.Position = UDim2.new(0, -140, 0, 0)
+Y.Text = "Y"
+Y.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Y.TextColor3 = Color3.fromRGB(0, 0, 0)
+Y.TextSize = 15
+Y.PlaceholderText = "Y"
+
+X.Name = "CFrameX"
+X.Parent = main
+X.Size = UDim2.new(0, 34, 0, 32)
+X.Position = UDim2.new(0, -175, 0, 0)
+X.Text = "X"
+X.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+X.TextColor3 = Color3.fromRGB(255, 0, 0)
+X.TextSize = 15
+X.PlaceholderText = "X"
+
+Open.Name = "Open"
+Open.Parent = ScreenGui
+Open.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Open.Position = UDim2.new(0, 0, 0.2, 0)
+Open.Size = UDim2.new(0, 43, 0, 34)
+Open.Font = Enum.Font.SourceSans
+Open.Text = "Open"
+Open.TextColor3 = Color3.fromRGB(0, 255, 0)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+Open.MouseButton1Down:Connect(function()
+main.Visible = true
+Open.Visible = false
+Close.Visible = true
+end)
+
+AutoClickOn.Name = "AutoClickOn"
+AutoClickOn.Parent = main
+AutoClickOn.Size = UDim2.new(0, 58, 0, 50)
+AutoClickOn.Position = UDim2.new(0, 135, 0, 80)
+AutoClickOn.Text = "AutoClick (On)"
+AutoClickOn.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+AutoClickOn.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutoClickOn.TextScaled = true
+AutoClickOn.TextSize = 20
+AutoClickOn.Visible = false
+AutoClickOn.BackgroundTransparency = 0
+AutoClickOn.MouseButton1Down:Connect(function()
+AutoClickOn.Visible = false
+AutoClickOff.Visible = true
+
+for i,v in pairs(game.workspace:GetDescendants()) do
+if v.Name == PartName.Text or v.Name == PartName2.Text or v.Name == PartName3.Text or v.Name == PartName4.Text or v.Name == PartName5.Text then
+fireclickdetector(v.Click)
+end
+end
+end)
+
+AutoClickOff.Name = "AutoClickOff"
+AutoClickOff.Parent = main
+AutoClickOff.Size = UDim2.new(0, 58, 0, 50)
+AutoClickOff.Position = UDim2.new(0, 135, 0, 80)
+AutoClickOff.Text = "AutoClick (Off)"
+AutoClickOff.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+AutoClickOff.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutoClickOff.TextScaled = true
+AutoClickOff.TextSize = 20
+AutoClickOff.Visible = true
+AutoClickOff.BackgroundTransparency = 0
+AutoClickOff.MouseButton1Down:Connect(function()
+AutoClickOn.Visible = true
+AutoClickOff.Visible = false
+_G.AutoClick = false
+end)
+
+ViewPartOff.Name = "ViewOff"
+ViewPartOff.Parent = main
+ViewPartOff.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+ViewPartOff.Position = UDim2.new(0.53, 70, 0, 16)
+ViewPartOff.Size = UDim2.new(0, 55, 0, 50)
+ViewPartOff.Font = Enum.Font.SourceSans
+ViewPartOff.Text = "ViewPart (Off)"
+ViewPartOff.TextColor3 = Color3.fromRGB(0, 0, 0)
+ViewPartOff.TextScaled = true
+ViewPartOff.TextWrapped = true
+ViewPartOff.MouseButton1Down:Connect(function()
+ViewPartOff.Visible = false
+ViewPartOn.Visible = true
+
+_G.View = true
+while _G.View == true do wait(ViewPartDelay.Text)
+for i,v in pairs(workspace:GetDescendants()) do
+		if v.Name == PartName.Text or v.Name == PartName2.Text or v.Name == PartName3.Text or v.Name == PartName4.Text or v.Name == PartName5.Text then
+				wait(ViewPartDelay.Text)
+				workspace.CurrentCamera.CameraSubject = v
+			end
+		end
+	end
+end)
+
+ViewPartOn.Name = "ViewOn"
+ViewPartOn.Parent = main
+ViewPartOn.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+ViewPartOn.Position = UDim2.new(0.53, 70, 0, 16)
+ViewPartOn.Size = UDim2.new(0, 55, 0, 50)
+ViewPartOn.Font = Enum.Font.SourceSans
+ViewPartOn.Text = "ViewPart (On)"
+ViewPartOn.TextColor3 = Color3.fromRGB(0, 0, 0)
+ViewPartOn.TextScaled = true
+ViewPartOn.TextSize = 14.000
+ViewPartOn.TextWrapped = true
+ViewPartOn.Visible = false
+ViewPartOn.MouseButton1Down:Connect(function()
+ViewPartOn.Visible = false
+ViewPartOff.Visible = true
+
+_G.View = false
+while _G.View == true do wait(ViewPartDelay.Text)
+for i,v in pairs(workspace:GetDescendants()) do
+		if v.Name == PartName.Text or v.Name == PartName2.Text or v.Name == PartName3.Text or v.Name == PartName4.Text or v.Name == PartName5.Text then
+				wait(ViewPartDelay.Text)
+				workspace.CurrentCamera.CameraSubject = v
+			end
+		end
+	end
+wait(1)
+workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+wait(3)
+workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+end)
+
+GotoPartOn.Name = "GotoOn"
+GotoPartOn.Parent = main
+GotoPartOn.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+GotoPartOn.Position = UDim2.new(0.53, 0, 0.119906083, 0)
+GotoPartOn.Size = UDim2.new(0, 55, 0, 50)
+GotoPartOn.Font = Enum.Font.SourceSans
+GotoPartOn.Text = "GotoPart (On)"
+GotoPartOn.TextColor3 = Color3.fromRGB(0, 0, 0)
+GotoPartOn.TextScaled = true
+GotoPartOn.TextSize = 14.000
+GotoPartOn.TextWrapped = true
+GotoPartOn.MouseButton1Down:Connect(function()
+GotoPartOn.Visible = false
+GotoPartOff.Visible = true
+
+_G.Goto = false
+while _G.Goto == true do wait(GotoPartDelay.Text)
+for i,v in pairs(workspace:GetDescendants()) do
+		if v.Name == PartName.Text or v.Name == PartName2.Text or v.Name == PartName3.Text or v.Name == PartName4.Text or v.Name == PartName5.Text then
+			if game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid') and game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid').SeatPart then
+				game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid').Sit = false
+				wait(.1)
+			end
+			wait(GotoPartDelay.Text)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+		end
+	end
+end
+end)
+
+GotoPartOff.Name = "GotoOff"
+GotoPartOff.Parent = main
+GotoPartOff.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+GotoPartOff.Position = UDim2.new(0.53, 0, 0.119906083, 0)
+GotoPartOff.Size = UDim2.new(0, 55, 0, 50)
+GotoPartOff.Font = Enum.Font.SourceSans
+GotoPartOff.Text = "GotoPart (Off)"
+GotoPartOff.TextColor3 = Color3.fromRGB(0, 0, 0)
+GotoPartOff.TextScaled = true
+GotoPartOff.TextWrapped = true
+GotoPartOff.MouseButton1Down:Connect(function()
+GotoPartOff.Visible = false
+GotoPartOn.Visible = true
+
+_G.Goto = true
+while _G.Goto == true do wait(GotoPartDelay.Text)
+for i,v in pairs(workspace:GetDescendants()) do
+		if v.Name == PartName.Text or v.Name == PartName2.Text or v.Name == PartName3.Text or v.Name == PartName4.Text or v.Name == PartName5.Text then
+			if game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid') and game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid').SeatPart then
+				game.Players.LocalPlayer.Character:FindFirstChildOfClass('Humanoid').Sit = false
+				wait(.1)
+			end
+			wait(GotoPartDelay.Text)
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+		end
+	end
+end
+end)
+
+PartEspOn.Name = "EspOn"
+PartEspOn.Parent = main
+PartEspOn.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+PartEspOn.Position = UDim2.new(0.3, 0, 0.119906083, 0)
+PartEspOn.Size = UDim2.new(0, 55, 0, 50)
+PartEspOn.Font = Enum.Font.SourceSans
+PartEspOn.Text = "PartEsp (On)"
+PartEspOn.TextColor3 = Color3.fromRGB(0, 0, 0)
+PartEspOn.TextScaled = true
+PartEspOn.TextSize = 14.000
+PartEspOn.TextWrapped = true
+PartEspOn.MouseButton1Down:Connect(function()
+PartEspOn.Visible = false
+PartEspOff.Visible = true
+
+for i,v in pairs(workspace:GetDescendants()) do
+			if v:IsA("BoxHandleAdornment") then
+				v:Destroy()
+			end
+		end
+end)
+
+PartEspOff.Name = "EspOff"
+PartEspOff.Parent = main
+PartEspOff.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+PartEspOff.Position = UDim2.new(0.3, 0, 0.119906083, 0)
+PartEspOff.Size = UDim2.new(0, 55, 0, 50)
+PartEspOff.Font = Enum.Font.SourceSans
+PartEspOff.Text = "PartEsp (Off)"
+PartEspOff.TextColor3 = Color3.fromRGB(0, 0, 0)
+PartEspOff.TextScaled = true
+PartEspOff.TextSize = 14.000
+PartEspOff.TextWrapped = true
+PartEspOff.MouseButton1Down:Connect(function()
+PartEspOn.Visible = true
+PartEspOff.Visible = false
+
+for i,v in pairs(workspace:GetDescendants()) do
+		if v.Name == PartName.Text or v.Name == PartName2.Text or v.Name == PartName3.Text or v.Name == PartName4.Text or v.Name == PartName5.Text then
+				local a = Instance.new("BoxHandleAdornment")
+				a.Parent = v
+				a.Adornee = v
+				a.AlwaysOnTop = true
+				a.ZIndex = 0
+				a.Size = v.Size
+				a.Transparency = 0.3
+				a.Color = BrickColor.new("Lime green")
+			end
+		end
+end)
+
+BringPartOn.Name = "BringOn"
+BringPartOn.Parent = main
+BringPartOn.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+BringPartOn.Position = UDim2.new(0.0597826242, 0, 0.119906127, 0)
+BringPartOn.Size = UDim2.new(0, 55, 0, 50)
+BringPartOn.Font = Enum.Font.SourceSans
+BringPartOn.Text = "BringPart (On)"
+BringPartOn.TextColor3 = Color3.fromRGB(1, 1, 1)
+BringPartOn.TextScaled = true
+BringPartOn.TextSize = 14.000
+BringPartOn.TextWrapped = true
+BringPartOn.Visible = false
+BringPartOn.MouseButton1Down:Connect(function()
+BringPartOff.Visible = true
+BringPartOn.Visible = false
+
+_G.BringPart = false
+end)
+
+BringPartOff.Name = "BringOff"
+BringPartOff.Parent = main
+BringPartOff.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+BringPartOff.Position = UDim2.new(0.0597826242, 0, 0.119906127, 0)
+BringPartOff.Size = UDim2.new(0, 58, 0, 50)
+BringPartOff.Font = Enum.Font.SourceSans
+BringPartOff.Text = "BringPart (Off)"
+BringPartOff.TextColor3 = Color3.fromRGB(1, 1, 1)
+BringPartOff.TextScaled = true
+BringPartOff.TextSize = 14.000
+BringPartOff.TextWrapped = true
+BringPartOff.MouseButton1Down:Connect(function()
+BringPartOn.Visible = true
+BringPartOff.Visible = false
+
+_G.BringPart = true
+while _G.BringPart == true do wait(BringDelay.Text)
+for i,v in pairs(workspace:GetDescendants()) do
+		if v.Name == PartName.Text or v.Name == PartName2.Text or v.Name == PartName3.Text or v.Name == PartName4.Text or v.Name == PartName5.Text then
+			v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(X.Text, Y.Text, Z.Text)
+		end
+end
+end
+end)
+
+Cred.Name = "Cred"
+Cred.Parent = main
+Cred.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
+Cred.Position = UDim2.new(0, 0, -0.266169071, 10)
+Cred.Size = UDim2.new(0, 300, 0, 34)
+Cred.Font = Enum.Font.SourceSans
+Cred.Text = "Script Made By Red_BloxZ"
+Cred.TextColor3 = Color3.fromRGB(255, 0, 0)
+Cred.TextSize = 24
+Cred.TextWrapped = true
